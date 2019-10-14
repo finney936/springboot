@@ -31,19 +31,13 @@ public class HumanService {
 		
 		Human human = null;
 		
-		System.out.println(id);
-		
 		for(Human h: list) {
 			
 			if(h.getNumber() == id) {
 				
-				System.out.println("2");
-				
 				human = h;
 			}
 		}
-		
-		System.out.println("3");
 		
 		return human;
 	}

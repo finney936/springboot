@@ -55,7 +55,7 @@ public class HumanController {
 		
 		Human human = service.getById(id);
 		
-		human.add(linkTo(methodOn(HumanController.class).getHuman(id)).withSelfRel());
+		if(human != null) human.add(linkTo(methodOn(HumanController.class).getHuman(id)).withSelfRel());
 		
 		return human;
 	}
